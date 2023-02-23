@@ -32,3 +32,5 @@ function showGuessOnScreen(guess) {
         `
     }
 }
+
+recognition.addEventListener('end', () => recognition.start());
