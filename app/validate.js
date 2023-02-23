@@ -17,6 +17,8 @@ function validateGuess(guess) {
         document.body.innerHTML = `
             <h2>Você acertou!</h2>
             <h3>O número secreto era ${secretNumber}!</h3>
+
+            <button style="cursor: pointer" id="play-again" class="btn-jogar">Jogar novamente</button>
         `
     } else if(intNumber > secretNumber) {
         guessElement.innerHTML += `
@@ -36,3 +38,7 @@ function validGuess(n) {
 function validateAllowedValue(n) {
     return n > highestValue || n < lowerValue;
 }
+
+document.body.addEventListener('click', e => {
+    if(e.target.id === 'play-again') window.location.reload();
+})
