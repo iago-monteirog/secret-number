@@ -4,6 +4,7 @@
     --font-family: 'Bangers', cursive;
     --bg-color: #08D9D6;
     --primary-color: #252A34;
+    --secondary-color: #FF2E63;
 }
 
 body {
@@ -23,6 +24,10 @@ h1 {
     font-size: 7em;
 }
 
+h2 {
+    font-size: 5em;
+}
+
 h3 {
     font-size: 3.5em;
     margin-top: 30px;
@@ -40,3 +45,15 @@ h3 {
     padding: 30px;
     margin: 20px;
 }
+
+.wrong-box {
+    border: 2px solid var(--secondary-color);
+    border-radius: 100px;
+    background-color: var(--secondary-color);
+    display: inline-block;
+    font-size: 4em;
+    padding: 30px;
+    margin: 20px;
+}
+
+  
